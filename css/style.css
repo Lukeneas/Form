@@ -1,0 +1,208 @@
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background: #243328;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+:root {
+  font-size: 0.625rem;
+  --pad: 0.5rem 1rem;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+body {
+  padding-top: 2rem;
+  font-family: poppins;
+  place-content: start center;
+  height: 120vh;
+  background: url(../img/fundo.svg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+body * {
+  font-family: poppins;
+}
+main {
+  border-radius: 0.5rem;
+  padding: 2rem 4rem;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border: 0.3rem #00aa00 solid;
+  max-width: 120rem;
+}
+h1 {
+  font-size: 2rem;
+  justify-self: center;
+  max-width: max-content;
+  background-color: #243328;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+}
+p {
+  font-size: 1.6rem;
+  width: max-content;
+  padding: 0rem 2.5rem;
+  margin-bottom: 2rem;
+  justify-self: start;
+  color: #a3ccae;
+  border-top: #00aa00 0.1rem dashed;
+  justify-self: center;
+}
+form {
+  gap: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+.pad {
+  padding: 0.5rem 1rem;
+}
+.up {
+  text-transform: uppercase;
+}
+.cap {
+  text-transform: capitalize;
+}
+.button {
+  margin-top: 3rem;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-content: space-evenly;
+  padding: 1rem 0.5rem;
+}
+.button button {
+  cursor: pointer;
+  appearance: none;
+  background: #ffffff;
+  color: #243328;
+  box-shadow: repeat(3, 0.2rem) #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  transition: 2s ease-in-out fowards;
+}
+.button button.frs:hover {
+  background: #aa0000;
+}
+.button button:hover {
+  background: #00aa00;
+}
+.form-i {
+  gap: 0.5rem;
+}
+.radio-bg {
+  background: #eeeeee;
+  border: #000000 0.1rem dashed;
+  width: max-content;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.radio {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.radio label {
+  cursor: pointer;
+  background: #243328;
+  border: 0.3rem #000000 solid;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  color: #dddddd;
+}
+.radio input {
+  appearance: none;
+  background: #ffffff;
+  outline: 0.1rem #000000 solid;
+  border: 0.1rem #243328 solid;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+.radio input:checked {
+  background: #a3ccae;
+}
+.radio input:checked + label {
+  box-shadow: 0.2rem 0.2rem 0.2rem #00ff00;
+  color: #a3ccae;
+}
+
+fieldset {
+  grid-template-columns: auto 1fr;
+  place-items: end;
+  border: none;
+  gap: 2rem;
+}
+label {
+  font-size: 1.6rem;
+  display: block;
+  box-shadow: 0.2rem 0.2rem 0.2rem #000000;
+}
+.grid > label {
+  border-radius: 0.5rem;
+  max-width: max-content;
+  background: #a3ccae;
+  color: #598063;
+}
+input,
+textarea,
+select {
+  background: #243328;
+  color: #a3ccae;
+  box-shadow: 0.2rem 0.2rem 0.2rem #000000;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+  max-width: fit-content;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0.2rem 0.2rem 0.2rem #00ff00;
+  outline: 0.2rem #000000 solid;
+}
+
+.img-leaf {
+  justify-self: center;
+  margin-bottom: 20px;
+  border: 2px #00ff00;
+  border-style: outset;
+  /* border-bottom: 3px #00ff00 dashed; */
+  border-radius: 50%;
+  animation: animarImagem 5s linear 0s infinite alternate;
+}
+@keyframes animarImagem {
+  from {
+    transform: translateY(-25%) rotate(0turn) scale(1);
+  }
+  to {
+    transform: translateY(50%) rotate(1turn) scale(0.5);
+  }
+}
+h1 {
+  animation: animarTexto 5s linear alternate infinite;
+}
+@keyframes animarTexto {
+  to {
+    color: #00ff00;
+  }
+}

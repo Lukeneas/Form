@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Faça seu cadastro Dev">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/import.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https: //fonts.googleapis.com/css2?family= Borel & = Poppins:wght@400;700 & family= Roboto & display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/leaf.ico" type="image/x-icon">
+
+  <title>Cadastro</title>
+</head>
+
+<body class="grid">
+  <main>
+
+    <section class="bg grid">
+      <img src="./img/leaf.svg" alt="folha" class="img-leaf" width="80px" height="80px">
+      <h1 class="up">cadastro de dev</h1>
+      <p>Preencha os dados abaixo </p>
+
+      <form class="grid">
+
+        <fieldset class="grid">
+          <div class="form-i grid">
+            <label for="nome" class="cap pad">nome</label>
+            <input type="text" name="nome" id="nome" class="pad" required>
+          </div>
+
+          <div class="form-i grid">
+            <label for="sobrenome" class="cap pad">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" class="pad" required>
+          </div>
+        </fieldset>
+
+        <div class="form-i grid email">
+          <label for="email" class="cap pad">email</label>
+          <input type="text" name="email" id="email" class="pad" required>
+        </div>
+
+        <label class="tit pad">Especialização</label>
+        <div class="grid radio-bg">
+          <div class="radio">
+            <input type="radio" name="ap" id="front-end">
+            <label for="front-end">Front-end</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" name="ap" id="back-end">
+            <label for="back-end">Back-end</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" name="ap" id="fullstack">
+            <label for="fullstack">Fullstack</label class="pad">
+          </div>
+        </div>
+
+        <fieldset class="grid">
+          <div class="form-i grid">
+            <label for="experiencia" class="cap pad">experiência</label>
+            <textarea name="experiencia" id="experiencia" class="pad" cols="35" rows="5"></textarea>
+          </div>
+
+          <div class="form-i button">
+            <button type="reset" class="pad frs">
+              Reescrever
+            </button>
+            <button class="pad sec">
+              Enviar
+            </button>
+          </div>
+        </fieldset>
+
+      </form>
+
+    </section>
+
+  </main>
+</body>
+
+</html>

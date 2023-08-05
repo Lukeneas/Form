@@ -1,0 +1,30 @@
+@media (max-width: 800px) {
+  :root {
+    font-size: 0.575rem;
+  }
+  main {
+    max-width: 50rem;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    font-size: 0.55rem;
+  }
+  main {
+    max-width: 40rem;
+    padding: 2rem;
+    padding-bottom: 0px;
+  }
+  fieldset {
+    justify-self: start;
+    grid-template-columns: 1fr;
+  }
+  .radio-bg {
+    justify-content: start;
+    width: 100%;
+    grid-auto-flow: row;
+  }
+  button {
+    font-size: 1.4rem;
+  }
+}
